@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-//-------------------------------------------------- STRINGS PRACTICE ----------------------------------------------------------------
+/*//-------------------------------------------------- STRINGS PRACTICE ----------------------------------------------------------------
 // string pool
 string s1 = "Hello";
 string s2 = "Hello";
@@ -93,12 +93,60 @@ Console.WriteLine("\nLast element of list is : " + list[list.Count-1]);
 Console.WriteLine("Index of 1 in list is : " + list.IndexOf(1));
 Console.WriteLine("Last index of 1 in list is :" + list.LastIndexOf(1));
 Console.WriteLine("Remove 1 from list : " + list.Remove(1));
+Console.WriteLine("check whether ist contains number 1 : " + list.Contains(1));
 Console.Write("Remove all 1 from list : ");
-for(int i=0;i<list.Count;i++)
+for (int i=0;i<list.Count;i++)
 {
     if (list[i] == 1)
         list.Remove(list[i]);
     else
         Console.Write(list[i]);
 }
+Console.WriteLine("\ncheck whether ist contains number 1 : " + list.Contains(1));
 Console.Write("\n");
+*/
+//---------------------------------------- EXERCISES ---------------------------------------------------------------------
+// QUES 1
+//var li = new List<string>();
+//while(true)
+//{
+//    Console.Write("Enter Name : ");
+//    var input = Console.ReadLine();
+//    if (String.IsNullOrWhiteSpace(input))
+//        break;
+//    li.Add(input);
+//}
+
+//if (li.Count == 1)
+//    Console.WriteLine("{0} liked your post." , li[0]);
+//else if (li.Count == 2)
+//    Console.WriteLine("{0}, {1} liked your post." , li[0], li[1]);
+//else
+//{
+//    int size=li.Count-2;
+//    Console.WriteLine("{0}, {1} and {2} liked your post." , li[0], li[1], size);
+//}
+
+//QUES 2
+Console.Write("Enter Name : ");
+var str= Console.ReadLine();
+char[] arr = new char[str.Length];
+for(int i=0; i<str.Length; i++)
+{
+    arr[i] = str[i];
+}
+int start = 0;
+int end = arr.Length - 1;
+while (start < end)
+{
+    char temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
+}
+string revStr = new string(arr);
+Console.WriteLine(revStr);
+
+//Question 3
+
