@@ -8,7 +8,7 @@ namespace nonPrimitive
         static void Main(string[] args)
         {
 //------------------------------------------------------------------ ARRAYS -------------------------------------------------------------------------------------
-                                    // STATIC ALLOCATION
+           /*                         // STATIC ALLOCATION
             int[] numbers = {1,2,3};
             Console.WriteLine(numbers[0]);
             
@@ -21,7 +21,7 @@ namespace nonPrimitive
             Console.WriteLine(prime[2]);
             Console.WriteLine(prime[3]);
             Console.WriteLine(prime[4]);
-            //Console.WriteLine(prime[5]);
+            //Console.WriteLine(prime[5]);*/
 
                                         // without declaration
                                              // (string array)
@@ -36,7 +36,7 @@ namespace nonPrimitive
             Console.WriteLine(name[4]);
             Console.WriteLine(name[5]);
                                              // (int array)
-            int[] numb = new int[4];
+            /*int[] numb = new int[4];
             numb[0] = 2;
             Console.WriteLine("(DA) INT ARRAY OF SIZE 4, WILL ALLOCATE 0 ON NON DEFINED INDEXES");
             Console.WriteLine(numb[0]);
@@ -48,16 +48,16 @@ namespace nonPrimitive
             letters[0] = 'a';
             Console.WriteLine("(DA) CHAR ARRAY OF SIZE 2, WILL ALLOCATE SPACE ON NON DEFINED INDEXES");
             Console.WriteLine(letters[0]);
-            Console.WriteLine(letters[1]);
-                                            // (bool array)
+            Console.WriteLine(letters[1]);*/
+           /*                                 // (bool array)
             var expression = new bool[2];
             expression[1] = true;
             Console.WriteLine("(DA) BOOL ARRAY OF SIZE 2, WILL ALLOCATE FALSE ON NON DEFINED INDEXES");
             Console.WriteLine(expression[0]);
-            Console.WriteLine(expression[1]);
+            Console.WriteLine(expression[1]);*/
 // ----------------------------------------------------------------------STRINGS -------------------------------------------------------------------------------
                                            // 1. using string literal
-            var name1 = "Ritika";
+            /*var name1 = "Ritika";
             string name2 = "Narang";
             String name3 = "Ritika Narang";
             Console.WriteLine("\nString using string interpolation");
@@ -95,7 +95,7 @@ https:\chat.openai.com\c\fd7de188-bb14-4fdc-9ae2-7d4f550ce1a0";
                     Console.WriteLine("INVALID");
             }
                                              //************ QUESTION 2) max of 2 numbers ****************
-            /*Console.WriteLine("\nQUESTION 2");
+            *//*Console.WriteLine("\nQUESTION 2");
             Console.WriteLine("Enter first number");
             var one=Console.ReadLine();
             if (int.TryParse(one, out int one_i))
@@ -132,9 +132,9 @@ https:\chat.openai.com\c\fd7de188-bb14-4fdc-9ae2-7d4f550ce1a0";
                     else if (wt_i < ht_i) Console.WriteLine("Image is portrait");
                     else Console.WriteLine("Image is neither portrait nor landscape");
                 }
-            }*/
+            }*//*
                  // QUESTION 4
-
+            */
         }
     }
 }
