@@ -46,10 +46,10 @@ namespace nonPrimitive
             // (char array)
             var letters = new char[2];
             letters[0] = 'a';
-            char c1;
+            //char c1;
             Console.WriteLine("(DA) CHAR ARRAY OF SIZE 2, WILL ALLOCATE SPACE ON NON DEFINED INDEXES");
             Console.WriteLine(letters[0]);
-            Console.WriteLine(letters[1].CompareTo(c1));
+            //Console.WriteLine(letters[1].CompareTo(c1));
             /*                                 // (bool array)
              var expression = new bool[2];
              expression[1] = true;

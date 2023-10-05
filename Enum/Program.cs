@@ -73,7 +73,7 @@ namespace Enumm
                     return "Invalid color";
             }
         }*/
-        string[] a = new List<String>();
+        //string[] a = new List<String>();
     }
 }
 
