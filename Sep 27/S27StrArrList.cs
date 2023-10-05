@@ -2,6 +2,9 @@
 using System.Globalization;
 /*//-------------------------------------------------- STRINGS PRACTICE ----------------------------------------------------------------
 // string pool
+/0==null
+string s1 || string s2=null;
+string s3="";
 string s1 = "Hello";
 string s2 = "Hello";
 char[] c1 = { 'H', 'e', 'l', 'l', 'o' };

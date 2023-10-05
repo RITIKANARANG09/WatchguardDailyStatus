@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NonPrimitive", "Sep 27\NonP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "File", "a\File.csproj", "{A5E6490C-9C7A-4C22-91F3-199512BDD5B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_Beginner_C#", "Exercise_Beginner_C#\Exercise_Beginner_C#.csproj", "{B5A8A5A0-77BC-44B8-A762-772DE39430B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise_Beginner_C#", "Exercise_Beginner_C#\Exercise_Beginner_C#.csproj", "{B5A8A5A0-77BC-44B8-A762-772DE39430B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{C6504217-6DDD-4A40-9009-AC19BF6465E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{C6504217-6DDD-4A40-9009-AC19BF6465E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enum", "Enum\Enum.csproj", "{16BD9684-0231-4535-993D-76895AB8E036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes( I )", "Classes( I )\Classes( I ).csproj", "{6800461B-3FEF-4D3B-B82B-BEE8DDA0872F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{C6504217-6DDD-4A40-9009-AC19BF6465E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6504217-6DDD-4A40-9009-AC19BF6465E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6504217-6DDD-4A40-9009-AC19BF6465E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16BD9684-0231-4535-993D-76895AB8E036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BD9684-0231-4535-993D-76895AB8E036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BD9684-0231-4535-993D-76895AB8E036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BD9684-0231-4535-993D-76895AB8E036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6800461B-3FEF-4D3B-B82B-BEE8DDA0872F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6800461B-3FEF-4D3B-B82B-BEE8DDA0872F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6800461B-3FEF-4D3B-B82B-BEE8DDA0872F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6800461B-3FEF-4D3B-B82B-BEE8DDA0872F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

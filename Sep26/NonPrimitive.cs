@@ -7,56 +7,57 @@ namespace nonPrimitive
     {
         static void Main(string[] args)
         {
-//------------------------------------------------------------------ ARRAYS -------------------------------------------------------------------------------------
-           /*                         // STATIC ALLOCATION
-            int[] numbers = {1,2,3};
-            Console.WriteLine(numbers[0]);
-            
-                                   // DYNAMIC ALLOCATION
-                                        // with declaration
-            int[] prime = new int[5] { 2, 3, 5, 7, 11 };
-            Console.WriteLine("(DA) WITH DECLARATION WE HAVE TO DECLARE VALUES");  
-            Console.WriteLine(prime[0]);
-            Console.WriteLine(prime[1]);
-            Console.WriteLine(prime[2]);
-            Console.WriteLine(prime[3]);
-            Console.WriteLine(prime[4]);
-            //Console.WriteLine(prime[5]);*/
+            //------------------------------------------------------------------ ARRAYS -------------------------------------------------------------------------------------
+            /*                         // STATIC ALLOCATION
+             int[] numbers = {1,2,3};
+             Console.WriteLine(numbers[0]);
 
-                                        // without declaration
-                                             // (string array)
-            string[] name = new string[6];
+                                    // DYNAMIC ALLOCATION
+                                         // with declaration
+             int[] prime = new int[5] { 2, 3, 5, 7, 11 };
+             Console.WriteLine("(DA) WITH DECLARATION WE HAVE TO DECLARE VALUES");  
+             Console.WriteLine(prime[0]);
+             Console.WriteLine(prime[1]);
+             Console.WriteLine(prime[2]);
+             Console.WriteLine(prime[3]);
+             Console.WriteLine(prime[4]);
+             //Console.WriteLine(prime[5]);*/
+
+            // without declaration
+            // (string array)
+            /*string[] name = new string[6];
             name[0] = "AS";
             name[1] = "SD";
             Console.WriteLine("(DA) STRING ARRAY OF SZE 6, WILL ALLOCATE SPACES ON NON DEFNED INDEXES");
             Console.WriteLine(name[0]);
             Console.WriteLine(name[1]);
-            Console.WriteLine(name[2]);
+            Console.WriteLine(name[2].Length); // null
             Console.WriteLine(name[3]);
             Console.WriteLine(name[4]);
-            Console.WriteLine(name[5]);
-                                             // (int array)
+            Console.WriteLine(name[5]);*/
+            // (int array)
             /*int[] numb = new int[4];
             numb[0] = 2;
             Console.WriteLine("(DA) INT ARRAY OF SIZE 4, WILL ALLOCATE 0 ON NON DEFINED INDEXES");
             Console.WriteLine(numb[0]);
             Console.WriteLine(numb[1]);
             Console.WriteLine(numb[2]);
-            Console.WriteLine(numb[3]);
-                                            // (char array)
+            Console.WriteLine(numb[3]);*/
+            // (char array)
             var letters = new char[2];
             letters[0] = 'a';
+            char c1;
             Console.WriteLine("(DA) CHAR ARRAY OF SIZE 2, WILL ALLOCATE SPACE ON NON DEFINED INDEXES");
             Console.WriteLine(letters[0]);
-            Console.WriteLine(letters[1]);*/
-           /*                                 // (bool array)
-            var expression = new bool[2];
-            expression[1] = true;
-            Console.WriteLine("(DA) BOOL ARRAY OF SIZE 2, WILL ALLOCATE FALSE ON NON DEFINED INDEXES");
-            Console.WriteLine(expression[0]);
-            Console.WriteLine(expression[1]);*/
-// ----------------------------------------------------------------------STRINGS -------------------------------------------------------------------------------
-                                           // 1. using string literal
+            Console.WriteLine(letters[1].CompareTo(c1));
+            /*                                 // (bool array)
+             var expression = new bool[2];
+             expression[1] = true;
+             Console.WriteLine("(DA) BOOL ARRAY OF SIZE 2, WILL ALLOCATE FALSE ON NON DEFINED INDEXES");
+             Console.WriteLine(expression[0]);
+             Console.WriteLine(expression[1]);*/
+            // ----------------------------------------------------------------------STRINGS -------------------------------------------------------------------------------
+            // 1. using string literal
             /*var name1 = "Ritika";
             string name2 = "Narang";
             String name3 = "Ritika Narang";
