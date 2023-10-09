@@ -32,6 +32,7 @@ namespace Classes
     }
     class Basic
     {
+
         public static void Main(string[] args)
         {
             PersonInfo values = new PersonInfo();
@@ -43,7 +44,7 @@ namespace Classes
               or assign it an object of a compatible type that may have been created elsewhere*/
             PersonInfo values2; // No error
                                 //values2.age = 50;  // error
-
+                         
             // without creating object
             //a)
             //var ob1 = values.info("Narang",40);
@@ -64,7 +65,7 @@ namespace Classes
             var order = new Order();
             customer.orders.Add(order);
 
-            //object initializer
+            //object initializer  (instead of creating many constructors)
             PersonInfo customer3 = new PersonInfo
             {
                 name = "ritika",
@@ -80,6 +81,7 @@ namespace Classes
             obj.Method(new MethodOverloading(40, 50));
             Console.WriteLine(obj.x);
                 Console.WriteLine(obj.y);
+
             //------------- readonly ----------------------------------------
             Customer obj2= new Customer();
             obj2.orders.Add(new Order());
@@ -96,6 +98,45 @@ namespace Classes
             var prvt2=new GetSetPrvt();
             prvt.SetName("");
             Console.WriteLine(prvt2.GetName());
+            
+            //------------ indexer ---------------------------------------------
+            var index = new Indexer();
+            index["name"] = "RITIKA NARANG";
+            Console.WriteLine(index["name"]);
+            var index2=new Name();
+            index2.name = "Ritika";
+            Console.WriteLine(index2[0]);
+            //--------------- get,set & indexer ----------------------------------
+
+            var empInfo = new Employee("Ritika","Narang",1,"Software Engineer", 150000);
+            //Console.WriteLine(empInfo[0]);   // error
+            //after writing indexer in Employee class ------------
+            // int
+            Console.WriteLine(empInfo[0]); 
+            Console.WriteLine(empInfo[1]);
+            Console.WriteLine(empInfo[2]);
+            Console.WriteLine(empInfo[3]);
+            Console.WriteLine(empInfo[4]);
+            // after modification
+            empInfo[4] = 200000;
+            empInfo.id = 2;
+            Console.WriteLine(empInfo["FirstName"]);
+            Console.WriteLine(empInfo["LastName"]);
+            Console.WriteLine(empInfo["id"]);
+            Console.WriteLine(empInfo["Job"]);
+            Console.WriteLine(empInfo["Salary"]);
+
+            //-------------------- upcasting and downcasting -----------------------------
+            Text text = new Text();
+            Shape s = text;
+            s.width = 200;
+            text.width = 100;
+          
+            Console.WriteLine(text.width);
+
+            //--------------- internal & protected internal access modifier -----------------------------------------------
+            Student s = new Student();
+            
         }
     }
 }
