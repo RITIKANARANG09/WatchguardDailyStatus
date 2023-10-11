@@ -15,6 +15,8 @@ namespace Inheritance
         {
             var student1 = new Student1();
             //student1.name = "r";                      //error
+            Student student2 = new Student1();
+            student2.age = 20;
             student1.age = 20;
             Console.WriteLine(student1.age);
         }          // will work }

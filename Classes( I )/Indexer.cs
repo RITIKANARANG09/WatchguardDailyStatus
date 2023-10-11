@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Classes
 {
@@ -33,7 +29,7 @@ namespace Classes
             this.LastName = LastName;
             this.Salary = Salary;
             this.id = id;
-            this.Job = Job;
+            this.Job = Job; 
         }
         public object this[int i]
         {
@@ -55,22 +51,23 @@ namespace Classes
             }
             set
             {
-                if (i == 0)
+                     if (i == 0)
                     this.FirstName = value.ToString();
                 else if (i == 1)
-                    this.LastName = value.ToString();
+                    this.LastName  = value.ToString();
                 else if (i == 2)
-                    this.id = Convert.ToInt32(value);
+                    this.id        = Convert.ToInt32(value);
                 else if (i == 3)
-                    this.Job = value.ToString();
+                    this.Job       = value.ToString();
                 else if (i == 4)
-                    this.Salary = Convert.ToDouble(value);
+                    this.Salary    = Convert.ToDouble(value);
             }
         }
+        //------------ indexer overloading ----------------
         public object this[string name]
         {
             get {
-                if (name == "FirstName") return FirstName;
+                if (name      == "FirstName") return FirstName;
                 else if (name == "LastName") return LastName;
                 else if (name == "id") return id;
                 else if (name == "Job") return Job;
@@ -80,7 +77,7 @@ namespace Classes
             }
             set
             {
-                if (name == "FirstName") this.FirstName=value.ToString();
+                if (name      == "FirstName") this.FirstName=value.ToString();
                 else if (name == "LastName") this.LastName = value.ToString();
                 else if (name == "id") this.id = Convert.ToInt32(value);
                 else if (name == "Job") this.Job = value.ToString();

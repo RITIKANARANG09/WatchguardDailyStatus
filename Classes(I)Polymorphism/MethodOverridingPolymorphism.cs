@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classes
+namespace Poly
 {
         public class Vehicle
         {
-            public void draw()
+            public virtual void draw()
         {
             Console.WriteLine("I am a vehicle");
         }
         }
         public class fourwheeler : Vehicle
         {
-           public void draw()
+           public override void draw()
         {
             Console.WriteLine("I am a fourwheeler");
         }
         }
     public class twoWheeler : Vehicle
     {
-        public void draw()
+        public override void draw()
         {
             Console.WriteLine("I am a twowheeler");
         }

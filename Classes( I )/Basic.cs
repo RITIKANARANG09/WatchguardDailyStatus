@@ -72,13 +72,13 @@ namespace Classes
                 age = 40
         };
             //------------- method overloading --------------------------
-            var obj = new MethodOverloading();
+           // var obj = new MethodOverloading();
             Console.WriteLine(obj.x);
             Console.WriteLine(obj.y);
             obj.Method(10, 20);
             Console.WriteLine(obj.x);
             Console.WriteLine(obj.y);
-            obj.Method(new MethodOverloading(40, 50));
+            //obj.Method(new MethodOverloading(40, 50));
             Console.WriteLine(obj.x);
                 Console.WriteLine(obj.y);
 
@@ -134,9 +134,19 @@ namespace Classes
           
             Console.WriteLine(text.width);
 
+            //-------------------- get set using properties -------------------
+
+            var prop = new Properties("r");
+            prop.Name="RITIKA";
+            Console.WriteLine(prop.Name);
+            Console.WriteLine(prop.Value); // int default value;
             //--------------- internal & protected internal access modifier -----------------------------------------------
-            Student s = new Student();
-            
+            //Student s = new Student();
+
+            var c = new Person(new DateTime(2001,09,19));
+            //var dt = new DateTime(1999,09,09);
+            Console.WriteLine( c.Age );
+
         }
     }
 }
