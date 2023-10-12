@@ -73,14 +73,14 @@ namespace Classes
         };
             //------------- method overloading --------------------------
            // var obj = new MethodOverloading();
-            Console.WriteLine(obj.x);
+           /* Console.WriteLine(obj.x);
             Console.WriteLine(obj.y);
             obj.Method(10, 20);
             Console.WriteLine(obj.x);
             Console.WriteLine(obj.y);
             //obj.Method(new MethodOverloading(40, 50));
             Console.WriteLine(obj.x);
-                Console.WriteLine(obj.y);
+                Console.WriteLine(obj.y);*/
 
             //------------- readonly ----------------------------------------
             Customer obj2= new Customer();

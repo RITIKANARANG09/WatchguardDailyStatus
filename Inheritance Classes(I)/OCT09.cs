@@ -1,54 +1,82 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
+
 namespace Inheritance
 {
 
-    public class Student
+    public class Animal
     {
-        private string name { get; set; }
-        protected int age { get; set; }
-        internal int id { get; set; }
-        protected int marks { get; set; }
-    }
-    public class Student1 : Student
-    {
-        public void fxn()
+        public virtual void sound()
         {
-            var student1 = new Student1();
-            //student1.name = "r";                      //error
-            Student student2 = new Student1();
-            student2.age = 20;
-            student1.age = 20;
-            Console.WriteLine(student1.age);
-        }          // will work }
-    //------------ constructor inheritance ----------------------------
-        public class Teacher
-    {
-        //public Teacher() { Console.WriteLine("Teacher role"); }
-        private string Name;
-        public Teacher(string name) {
-            Console.WriteLine("Name is {0} : ",name);
+            Console.WriteLine("Diff types of sounds of animals");
         }
     }
-    public class Teacher2:Teacher 
-        
+    public class Snake : Animal
     {
-        public Teacher2(string name) : base(name) { Console.WriteLine("new Teacher role : {0}",name); }
+        
+    
+            public override void sound()
+            {
+                Console.WriteLine("Hiss");
+            }
+        public void Move()
+        {
+            Console.WriteLine("Crawl");
+        }
+     }
+    
+    public class Dog : Animal
+    {
+        public override void sound()
+        {
+            Console.WriteLine("Bark");
+        }
+        public void Move()
+        {
+            Console.WriteLine("yes");
+        }
     }
+    //------------ constructor inheritance ----------------------------
+      
+   
         //-------------- upcasting and downcasting -----------------------
 
     public class Info {
         public static void Main(string[] args)
         {
-            var student = new Student();
-            /* student.name = "RITIKA"; // error
-             student.age = 20; //error
-             Console.WriteLine(student.name, student.age); //error*/
+            //base,new,abstract/virtual no instance
+            Animal a = new Animal();
+            Animal s = new Snake();
+            Animal d = new Dog();
+            d.sound(); // method of animal
+            // after overriding
+            d.sound(); // method of dog
+            // d.Move(); // error
+            // why upcasting ?
+            var lists = new List<Animal>() { 
+            d,s
+            };
             
-            //----------
-            Teacher2 teacher = new Teacher2("rn");
+            foreach(var index in lists)
+                index.sound();
+            // to remove d.Move() error , will do downcasting
+            Dog nd = (Dog)d;
+            nd.Move();
+            // downcasting without upcasting
+            //Snake ns = (Snake)s;    // error
 
+            /*Animal animal = new Snake();
+            if (animal is Snake snake)
+            {
+                snake.Move();
+            }
+            var obj = new object();
+            var owlObj = obj as Snake;
+            if (owlObj != null)
+            {
+                owlObj.Fly();
+            }*/
         } 
        }
     }
     
-}

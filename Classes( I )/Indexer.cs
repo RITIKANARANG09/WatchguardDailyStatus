@@ -5,6 +5,7 @@ namespace Classes
     public class Indexer
     {
         private Dictionary<string, string> _dictionary=new Dictionary<string,string>();
+
         public string this[string key]
         {
             get { return _dictionary[key]; }
