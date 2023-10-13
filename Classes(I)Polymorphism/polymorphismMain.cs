@@ -24,7 +24,7 @@ namespace Poly
         public static void Main(string[] args)
         {
             Car car = new Car();
-            car.ShowVehicle();
+            //car.ShowVehicle();
             //var s = new List<Vehicle>();
             //s.Add(new fourwheeler());
             //s.Add(new twoWheeler());
@@ -35,6 +35,20 @@ namespace Poly
             //s2.Draw();
             //s2.types(); // will not display anything
             //s2.classname();
+            Vehicles a= new Vehicles();
+            a.draw();
+            fourwheeler b = new fourwheeler();
+            b.draw();
+            var c = new twoWheeler();
+            c.draw();
+            // before overriding
+            Vehicles a2 = b;
+            a2.draw();
+                Vehicles b2 = c;    
+            b2.draw();
+            //after overriding
+            a2.draw();
+            b2.draw();
         }
     }
 }

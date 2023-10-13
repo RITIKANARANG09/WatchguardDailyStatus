@@ -17,6 +17,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            string s;
             // HELLO WORLD//
             //Console.WriteLine(" Hello RITIKA ");
 

@@ -1,46 +1,27 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
-
 namespace Inheritance
 {
 
-    public class Animal
-    {
-        public virtual void sound()
-        {
-            Console.WriteLine("Diff types of sounds of animals");
-        }
-    }
-    public class Snake : Animal
-    {
-        
-    
-            public override void sound()
-            {
-                Console.WriteLine("Hiss");
-            }
-        public void Move()
-        {
-            Console.WriteLine("Crawl");
-        }
-     }
-    
-    public class Dog : Animal
-    {
-        public override void sound()
-        {
-            Console.WriteLine("Bark");
-        }
-        public void Move()
-        {
-            Console.WriteLine("yes");
-        }
-    }
-    //------------ constructor inheritance ----------------------------
-      
    
-        //-------------- upcasting and downcasting -----------------------
-
+    //------------ constructor inheritance ----------------------------
+     public class A
+    {
+        public void name()
+        {
+            Console.WriteLine("hello class A");
+        }
+    }
+    public class  B:A
+    {
+        public B()
+        {
+            B b = new B();
+            b.name();
+            A a=new A();
+            a.name();
+        }
+    }
     public class Info {
         public static void Main(string[] args)
         {

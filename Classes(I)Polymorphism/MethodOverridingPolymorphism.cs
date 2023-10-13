@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Poly
 {
-        public class Vehicle
+        public class Vehicles
         {
             public virtual void draw()
         {
             Console.WriteLine("I am a vehicle");
         }
         }
-        public class fourwheeler : Vehicle
+        public class fourwheeler : Vehicles
         {
            public override void draw()
         {
             Console.WriteLine("I am a fourwheeler");
         }
         }
-    public class twoWheeler : Vehicle
+    public class twoWheeler : Vehicles
     {
         public override void draw()
         {

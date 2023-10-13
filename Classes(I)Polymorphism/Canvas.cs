@@ -10,10 +10,10 @@ namespace Poly
     {
       public void DrawShapes(List<Vehicle>s)
         {
-            foreach(var i in s)
+            /*foreach(var i in s)
             {
-                i.draw();
-            }
+                //i.draw();
+            }*/
         }
     }
 }
