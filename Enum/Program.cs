@@ -14,7 +14,7 @@ start = "Sunday";*/
 using System;
 enum Vehicle
 {
-    car = 0,
+    car = 07,
     bus,
     train,
     scooty,
@@ -34,11 +34,11 @@ namespace Enumm
     {
         static void Main(string[] args)
         {
-           /* Vehicle fourW = Vehicle.car;
+           //Vehicle fourW = Vehicle.car;
             Vehicle twoW = Vehicle.bike | Vehicle.scooty; // will display sum of both
-            Console.WriteLine(" two wheelers are : {0}",twoW);*/
+            Console.WriteLine(" two wheelers are : {0}",twoW);
             //Enum.GetNames(twoW);
-            /*Console.WriteLine(twoW);
+           /* Console.WriteLine(twoW);
             var a = (Vehicle)3;
             Console.WriteLine(a);
             var b = (Vehicle)40;

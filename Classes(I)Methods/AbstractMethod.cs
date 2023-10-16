@@ -43,9 +43,9 @@ namespace Methods
         {
             Console.WriteLine("mul is : " + x*y);
         }
-        public override void div(int x,int y)
+        public override void div(int x, int y)
         {
-            Console.WriteLine("div is : " + x%y);
+            Console.WriteLine("div is : " + x % y);
         }
         public void remainder(int x,int y)
         {
