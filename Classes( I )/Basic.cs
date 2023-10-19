@@ -35,13 +35,13 @@ namespace Classes
 
         public static void Main(string[] args)
         {
-            PersonInfo values = new PersonInfo();
+            /*PersonInfo values = new PersonInfo();
             values.intro("Ritika", 40);
-            /* values2 is a variable of type PersonInfo and is stored in stack but is empty i.e it 
+            *//* values2 is a variable of type PersonInfo and is stored in stack but is empty i.e it 
             is not containing address/reference of actual object in heap bcs we haven't made it yet*/
             /*At run time, when you declare a variable of a reference type, the variable contains the
              value null until you explicitly create an instance of the class by using the new operator,
-              or assign it an object of a compatible type that may have been created elsewhere*/
+              or assign it an object of a compatible type that may have been created elsewhere*//*
             PersonInfo values2; // No error
                                 //values2.age = 50;  // error
                          
@@ -70,7 +70,7 @@ namespace Classes
             {
                 name = "ritika",
                 age = 40
-        };
+        };*/
             //------------- method overloading --------------------------
            // var obj = new MethodOverloading();
            /* Console.WriteLine(obj.x);
@@ -83,7 +83,7 @@ namespace Classes
                 Console.WriteLine(obj.y);*/
 
             //------------- readonly ----------------------------------------
-            Customer obj2= new Customer();
+           /* Customer obj2= new Customer();
             obj2.orders.Add(new Order());
             obj2.orders.Add(new Order());
             Console.WriteLine(obj2.orders.Count);
@@ -105,20 +105,20 @@ namespace Classes
             Console.WriteLine(index["name"]);
             var index2=new Name();
             index2.name = "Ritika";
-            Console.WriteLine(index2[0]);
+            Console.WriteLine(index2[0]);*/
             //--------------- get,set & indexer ----------------------------------
 
             var empInfo = new Employee("Ritika","Narang",1,"Software Engineer", 150000);
             //Console.WriteLine(empInfo[0]);   // error
             //after writing indexer in Employee class ------------
             // int
-            Console.WriteLine(empInfo[0]); 
-            Console.WriteLine(empInfo[1]);
-            Console.WriteLine(empInfo[2]);
-            Console.WriteLine(empInfo[3]);
-            Console.WriteLine(empInfo[4]);
+            Console.WriteLine(empInfo[0.01]); 
+            Console.WriteLine(empInfo[0.02]);
+            Console.WriteLine(empInfo[0.03]);
+            Console.WriteLine(empInfo[0.04]);
+            Console.WriteLine(empInfo[0.05]);
             // after modification
-            empInfo[4] = 200000;
+            empInfo[0.01] = 200;
             empInfo.id = 2;
             Console.WriteLine(empInfo["FirstName"]);
             Console.WriteLine(empInfo["LastName"]);
@@ -127,7 +127,7 @@ namespace Classes
             Console.WriteLine(empInfo["Salary"]);
 
             //-------------------- upcasting and downcasting -----------------------------
-            Text text = new Text();
+         /*   Text text = new Text();
             Shape s = text;
             s.width = 200;
             text.width = 100;
@@ -145,7 +145,7 @@ namespace Classes
 
             var c = new Person(new DateTime(2001,09,19));
             //var dt = new DateTime(1999,09,09);
-            Console.WriteLine( c.Age );
+            Console.WriteLine( c.Age );*/
 
         }
     }

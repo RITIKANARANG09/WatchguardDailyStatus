@@ -32,19 +32,19 @@ namespace Classes
             this.id = id;
             this.Job = Job; 
         }
-        public object this[int i]
+        public object this[double i]
         {
             get
             {
-                if (i == 0)
+                if (i == 0.01)
                     return FirstName;
-                else if (i == 1)
+                else if (i == 0.02)
                     return LastName;
-                else if (i == 2)
+                else if (i == 0.03)
                     return id;
-                else if (i == 3)
+                else if (i == 0.04)
                     return Job;
-                else if (i == 4)
+                else if (i == 0.05)
                     return Salary;
                 else
                     return null;
@@ -52,16 +52,16 @@ namespace Classes
             }
             set
             {
-                     if (i == 0)
+                     if (i == 0.01)
                     this.FirstName = value.ToString();
-                else if (i == 1)
+                else if (i == 0.02)
                     this.LastName  = value.ToString();
-                else if (i == 2)
+                else if (i == 0.02)
                     this.id        = Convert.ToInt32(value);
-                else if (i == 3)
+                else if (i == 0.03)
                     this.Job       = value.ToString();
-                else if (i == 4)
-                    this.Salary    = Convert.ToDouble(value);
+                else if (i == 0.04)
+                    this.Salary   = Convert.ToDouble(value);
             }
         }
         //------------ indexer overloading ----------------
