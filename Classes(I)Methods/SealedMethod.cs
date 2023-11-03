@@ -17,24 +17,37 @@ namespace Methods
 {
     public  class SealedMethod
     {
-       public virtual void name()
+       protected virtual void name()
         {
             Console.WriteLine("base class");
+        }
+        public void name2()
+        {
+            name();
         }
     }
     public class Child : SealedMethod
     {
-        public sealed override void name()
+       /* public Child()
         {
-            Console.WriteLine("child class");
+        }
+*/
+        protected   override void name() => Console.WriteLine("child class");
+        public void name2()
+        {
+            name();
         }
     }
-    public sealed class GrandChild:Child
+    public /*static*/ class GrandChild:Child
     {
-        public  /*override*/ void name()
+        protected  new void name2()
         {
             Console.WriteLine("grandchild class");
         }
+        /*public override void name()
+        {
+            Console.WriteLine("grandchild class");
+        }*/
     }
     //error
    /* public class grandgrand:GrandChild
